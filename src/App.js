@@ -73,7 +73,7 @@ const questions = [
         answer: 2,
       },
       {
-        question: "Which movie did we start but never finish (watched online)?",
+        question: "Which movie did we start but never finished (watched online)?",
         options: ["The Proposal", "How to Lose a Guy in 10 Days", "Crazy, Stupid, Love", "Love & Other Drugs"],
         answer: 2,
       },
@@ -227,7 +227,7 @@ const resetApp = () => {
           <div class="letter">
           <p> Hello Love!! </p>
             <p>
-              This might be a very fun way for me to tell you what’s right or wrong, good or bad, in this universe where we remember it all, and in every other where we won’t – I love you.
+              This might be a very fun way for me to tell you whether you are right or wrong, the situation is good or bad, in this universe where we remember it all, and in every other where we won’t – I love you.
             </p>
 
             <p>
