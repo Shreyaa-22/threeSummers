@@ -11,6 +11,7 @@ import tulip from "./asset/flowers/tulip.png"
 import lavender from "./asset/flowers/lavender.png"
 import carnation from "./asset/flowers/carnation.png"
 import jasmine from "./asset/flowers/jasmine.png"
+import music from "./asset/music.mp3"
 
 const flowerData = [
   { src: rose, name: "Rose", meaning: "Our love and everything it stands for." },
@@ -18,7 +19,7 @@ const flowerData = [
   { src: bluebell, name: "Bluebell", meaning: "Gratitude for having you in my life." },
   { src: daisies, name: "Daisy", meaning: "Pure, happy memories with you." },
   { src: lily, name: "Lily", meaning: "The calm and peace you bring to me." },
-  { src: sunflower, name: "Sunflower", meaning: "how I am always turninging towards you." },
+  { src: sunflower, name: "Sunflower", meaning: "How I am always turning towards you." },
   { src: tulip, name: "Tulip", meaning: "Perfect love (yes, that’s us)." },
   { src: lavender, name: "Lavender", meaning: "Comfort and softness in your presence." },
   { src: carnation, name: "Carnation", meaning: "Deep affection and admiration that I carry for you." },
@@ -105,7 +106,7 @@ const sarcasmList = [
 ];
 
 export default function App() {
-  const [audio] = useState(typeof Audio !== "undefined" ? new Audio("/music.mp3") : null);
+  const [audio] = useState(typeof Audio !== "undefined" ? new Audio(music) : null);
   const [step, setStep] = useState("intro");
   const [currentQ, setCurrentQ] = useState(0);
   const [score, setScore] = useState(0);
@@ -116,7 +117,7 @@ export default function App() {
   useEffect(() => {
     if (audio) {
       audio.loop = true;
-      audio.volume = 0.5;
+      audio.volume = 0.8;
     }
   }, [audio]);
 
@@ -143,7 +144,7 @@ export default function App() {
       } else {
         setStep("result");
       }
-    }, 2500);
+    }, 3500);
   };
 
 const resetApp = () => {
